@@ -28,6 +28,8 @@ dvc add data_given/filename.csv
 git add .
 git commit -m "first commit"
 
+git add .&& git commit -m "update Readme.md"
+
 
 create a new github repository
 
