@@ -31,11 +31,20 @@ def train_eval(config_path):
     train             = pd.read_csv(train_data_path,sep = ',')
     test              = pd.read_csv(test_data_path,sep = ',')
 
-    train_x           = train_x.drop(target,axis =1)
+    train_x           = train.drop(target,axis =1)
     train_y           = train[target]
 
-    test_x            = test_x.drop(target,axis=1)
+    test_x            = test.drop(target,axis=1)
     test_y            = test[target]
+
+    lr = ElasticNet(
+        alpha = alpha,
+        l1_ratio = l1_ratio,
+        random_state = random_state
+    )
+
+    lr.fit(train_x,train_y)
+
 
 if __name__=='__main__':
     args = argparse.ArgumentParser()
