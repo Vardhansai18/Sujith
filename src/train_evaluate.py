@@ -15,6 +15,11 @@ import argparse
 import joblib
 import json
 
+def eval_metrics(actual,pred):
+    rmse = 1
+    mae  = 1
+    r2   = 1
+    return rmse,mae,r2
 
 def train_eval(config_path):
     config = read_params(config_path)
@@ -44,6 +49,10 @@ def train_eval(config_path):
     )
 
     lr.fit(train_x,train_y)
+
+    predicted_qualities = lr.predict(test_x)
+
+    (rmse,mae,r2) = eval_metrics(test_y,predicted_qualities)
 
 
 if __name__=='__main__':
