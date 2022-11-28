@@ -1,5 +1,4 @@
 dvc
 dvc[gdrive]
 sklearn
-yaml
 pandas
