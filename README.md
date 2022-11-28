@@ -1,10 +1,10 @@
 create env
 windows
-'''
+''' bash
 virtualenv env_name
 '''
 activate
-'''
+'''bash
 C:\Users\P.S.Vardhan\projmaj\Scripts\activate 
 '''
 
@@ -12,7 +12,7 @@ create req.txt
 
 install the requirements
 
-'''
+'''bash
 pip install -r requirements.txt
 '''
 
