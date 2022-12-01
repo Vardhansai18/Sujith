@@ -64,3 +64,10 @@ to track values
 
 
 create a report directory
+
+
+dvc repro
+
+dvc params diff
+
+

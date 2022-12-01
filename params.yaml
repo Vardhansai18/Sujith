@@ -1,7 +1,7 @@
 base:
   project: vardhan-project
   random_state: 42
-  target_col: TARGET
+  target_col: quality
 data_source:
   s3_source: data_given/winequality.csv
 load_data:
@@ -14,5 +14,8 @@ estimators:
   ElasticNet:
     params:
       alpha: 0.88
-      lr_ratio: 0.89
+      l1_ratio: 0.89
+reports:
+  params: report/params.json
+  scores: report/scores.json
 model_dir: saved_models

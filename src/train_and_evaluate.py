@@ -39,7 +39,7 @@ def train_and_evaluate(config_path):
     train_y = train[target]
     test_y = test[target]
 
-    train_x = train.drop(target, axis=1)  
+    train_x = train.drop(target, axis=1)
     test_x = test.drop(target, axis=1)
 
     lr = ElasticNet(
