@@ -55,7 +55,12 @@ load data
 get data
 split data
 
+#video 3
+
 
 create params.json and metrics.json
 
 to track values
+
+
+create a report directory
