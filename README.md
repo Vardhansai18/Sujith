@@ -48,3 +48,14 @@ update params.yaml
 
 
 create a new get_data.py in src 
+
+
+now run all the files in src
+load data
+get data
+split data
+
+
+create params.json and metrics.json
+
+to track values
